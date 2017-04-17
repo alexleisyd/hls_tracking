@@ -1,0 +1,91 @@
+﻿<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+<!doctype html>
+<html ng-app="mainApp">
+<head>
+<title>Hume Customer Tracking Portal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Hume Plasterboard,Tracking,Building Material,Plasterboard,Fibre Cement" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+
+</script>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/bootstrap.css" ref="stylesheet"/>
+</head>
+<body>
+
+<div class="header">
+	<h1>Hume Customer Tracking Portal</h1>
+</div>
+
+<div class="content" >
+	<div class="content1" ng-controller="MainCtrl as controller">
+		<h2>Order Tracking: <span id="order">{{controller.orderNo}}</span></h2>
+	</div>
+	<div class="content2">
+		<div class="content2-header1">
+			<p>Status : <span id="status">Ipsum Dolor</span></p>
+		</div>
+		<div class="content2-header1">
+			<p>Expected Date : <span id="date">Checking Quality</span></p>
+		</div>
+		<div class="content2-header1">
+			<p>Schedule : <span id="schedule">7-NOV-2015</span></p>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="content3">
+        <div class="shipment">
+			<div class="confirm">
+                <div class="imgcircle">
+                    <img src="images/confirm.png" alt="confirm order">
+            	</div>
+				<span class="line"></span>
+				<p>Confirmed Order</p>
+			</div>
+			<div class="process">
+           	 	<div class="imgcircle">
+                	<img src="images/process.png" alt="process order">
+            	</div>
+				<span class="line"></span>
+				<p>Processing Order</p>
+			</div>
+			<div class="quality">
+				<div class="imgcircle">
+                	<img src="images/quality.png" alt="quality check">
+            	</div>
+				<span class="line"></span>
+				<p>Quality Check</p>
+			</div>
+			<div class="dispatch">
+				<div class="imgcircle">
+                	<img src="images/dispatch.png" alt="dispatch product">
+            	</div>
+				<span class="line"></span>
+				<p>Dispatched Item</p>
+			</div>
+			<div class="delivery">
+				<div class="imgcircle">
+                	<img src="images/delivery.png" alt="delivery">
+				</div>
+				<p>Product Delivered</p>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+
+<div class="footer">
+	<p>Copyright © Hume Plasterboard Pty Ltd. All Rights Reserved | Powered by Hume Logistics System V2</p>
+</div>
+</body>
+</html>
