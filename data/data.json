@@ -1,0 +1,18 @@
+{
+  "status": true,
+  "trackingModel": {
+    "orderNo" : "SGR/123456",
+    "suburb" : "South Granville",
+    "status" : "Preparing Order",
+    "expectedDate" : "18/04/2017",
+    "schedule" : "1st AM",
+    "step" : 2,
+    "timestamps" : {
+      "confirmed":"03:24 PM 18/04/2017",
+      "prepared":"03:33 PM 18/04/2017",
+      "scheduled":"-",
+      "dispatched":"-",
+      "delivered":"-"}
+  }
+
+}

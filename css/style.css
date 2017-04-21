@@ -8,52 +8,68 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 body {
 	margin:0;
 	padding:0;
-	font-family: 'Open Sans', sans-serif;
+    font-family: Roboto, sans-serif;
 }
 .clear {
 	clear:both;
 }
-.header {
+.page-header {
 	margin-top:2%;
 	width:100%;
 	text-align:center;
 }
-.header h1 {
-	font-family: 'Open Sans', sans-serif;
-	line-height:25px;
-	text-transform:uppercase;
-	color:grey;
+/*.header h1 {*/
+	/*font-family: 'Open Sans', sans-serif;*/
+	/*line-height:25px;*/
+	/*color:grey;*/
+/*}*/
+.dialog{
+    width:60%;
+    margin:3% auto 0 auto;
+    height:120px;
 }
-.content{
+.form-group{
+    margin-right: 3%;
+}
+
+.form-inline{
+    text-align: center;
+}
+
+.button-bar {
+	text-align: center;
+}
+
+.container-fluid{
 	width:60%;
-	margin:3% auto 0 auto;
+	margin:0 auto 0 auto;
 	height:460px;
 	background-color:#F5F5F5;
 }
 .content1 {
 	background-color:#98d091;
 	text-align:center;
-	padding:2em;
+	padding:1em;
 }
-.content1 h2 {
-	font-family: 'Open Sans', sans-serif;
-	text-transform:uppercase;
+.content1 h3 {
 	margin:0;
 	color:#fff;
+}
+.content1 h3 span {
+    margin-right:5%
 }
 .content2 {
 	background-color:#b5e6ae;
 }
 .content2-header1 {
 	float:left;
-	width:27%;
+	width:32%;
 	text-align:center;
 	padding:1.5em;
 }
-.content2-header1 p {
-	font-family: 'Open Sans', sans-serif;
-	font-size:16px;
-	font-weight:700;
+.content2-header1 h4 {
+	/*font-size:16px;*/
+	/*font-weight:700;*/
 	color:#4E7D48;
 	margin:0;
 }
@@ -61,11 +77,12 @@ body {
 	font-size:14px;
 	font-weight:400;
 }
-.shipment {
+.tracking {
 	width:100%;
 	margin-top:10%;
 }
-span.line {
+.line {
+    transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
     height: 5px;
     width: 90px;
     background-color:#F5998E;
@@ -74,6 +91,7 @@ span.line {
     top: 28%;
     left: 45%;
 }
+
 .confirm{
 	text-align:center;
 	width:20%;
@@ -81,23 +99,28 @@ span.line {
 	float:left;
 	margin-left:5%;
 }
-.confirm .imgcircle , .process .imgcircle, .quality .imgcircle {
-	background-color:#98D091;
-}
-.confirm span.line, .process span.line {
-	background-color:#98D091; 
-}
+/*.confirm .imgcircle , .process .imgcircle, .quality .imgcircle {*/
+	/*background-color:#98D091;*/
+/*}*/
+
+/*.confirm .line, .process .line {*/
+	/*background-color:#98D091;*/
+/*}*/
 .content3 p {
 	margin-left:-50%;
-	font-size:15px;
-	font-weight:600;
+	/*font-size:15px;*/
+	/*font-weight:600;*/
 } 
 .imgcircle {
+    transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
 	height:75px;
 	width:75px;
 	border-radius:50%;
 	background-color:#F5998E;
 	position:relative;
+}
+.active{
+    background-color:#98D091;
 }
 .imgcircle img {
 	height:30px;
@@ -143,13 +166,13 @@ span.line {
 .footer {
 	margin-top:3%;
 	text-align:center;
-	font-weight:100;
+	/*font-weight:100;*/
 }
 .footer p {
 	color:grey;
-	font-size:15px;
+	/*font-size:15px;*/
 	font-family: 'Tahoma', sans-serif;
-	line-height:25px;
+	/*line-height:25px;*/
 }
 
 /*---- responsive-design -----*/
@@ -158,7 +181,7 @@ span.line {
 	width:157px;
 	left:32%;
 	}
-	.shipment{
+	.tracking{
 		margin-top:6%;
 	}
 .content3 p{
@@ -198,7 +221,7 @@ span.line {
     width: 90px;
     left: 45%;
 }
-.shipment {
+.tracking {
     margin-top: 10%;
 }
 }
@@ -296,7 +319,7 @@ span.line {
 	.content2-header1 span {
     font-size: 13px;
 }
-.shipment {
+.tracking {
     margin-top: 13%;
 }
 .content3 p {
@@ -379,22 +402,28 @@ span.line {
 }
 
 @media (max-width: 414px){
-	.header {
+	.page-header {
     margin-top: 8%;
 }
-	.content {
+	.page-header h1 {
+		font-size: 24px;
+	}
+	.container-fluid {
     width: 70%;
 	height:750px;
-	margin-top:9%;
+	margin-top:5%;
 	padding:10%;
 }
 	.content1 {
 	margin: -14% 0 0 -14%;
-	width:116%;
+	width:127.5%;
 }
-	.content1 h2 {
+	.content1 h3 {
 	font-size:22px;
 }
+	.content1 h3 span {
+		display: block;
+	}
 	.content2 {
     margin-left: -14%;
 	width: 127.5%;
@@ -404,8 +433,9 @@ span.line {
     width: 80%;
 	margin-left: 3%;
 }
-	.content2-header1 p {
-    font-size: 19px;
+	.content2-header1 h4 {
+    font-size: 16px;
+	display: block;
 }
 	.content2-header1 span {
     font-size: 16px;
@@ -446,14 +476,16 @@ span.line {
 	top:124%;
 }
 	.content3 p {
-    font-size: 15px;
+    font-size: 12px;
     margin: -16% 0 4% -81%;
 }
-	.shipment {
+	.tracking {
     margin-left: 16%;
 }
 	.footer {
+		position: relative;
 	padding:1%;
+	margin-top:60%;
 }
 	.footer p {
 	font-size:16px;
@@ -464,16 +496,13 @@ span.line {
 	.header {
     margin-top: 9%;
 }
-	.content1 {
-	width:115%;
-}
-	.content1 h2 {
-    font-size: 21px;
+	.content1 h3 {
+    font-size: 20px;
 }
 	.content3 p {
-    margin: -18% 0 6% -85%;
+    margin: -18% 0 4% -85%;
 }
-	.shipment {
+	.tracking {
     margin-top: 15%;
 }
 	span.line {
@@ -495,23 +524,20 @@ span.line {
 @media (max-width: 375px){
 	.content {
     height: 755px;
-	width:68%;
 }
-	.content2{
-	width:128%;
-}
-	.content1 h2 {
-    font-size: 19px;
+	.content1 h3 {
+    font-size: 18px;
+		display:block;
 }
 	.content3 p {
-    margin: -18% 0 8% -86%;
+    margin: -18% 0 4% -86%;
 }
 	span.line {
     top: 105%;
     left: 47.5%;
     height: 52px;
 }
-	.shipment {
+	.tracking {
     margin-left: 17%;
 }
 }
@@ -547,7 +573,7 @@ span.line {
 	.content3 p {
     margin: -23% 0 12% -99%;
 }
-	.shipment {
+	.tracking {
 	margin: 16% 0 0 19%;
 }
 	span.line {
