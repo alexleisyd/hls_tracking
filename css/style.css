@@ -28,6 +28,12 @@ body {
     margin:3% auto 0 auto;
     height:120px;
 }
+.panel-default > .panel-heading{
+	background: #ae1e37 none!important;
+	color: #ffffff!important;
+}
+
+
 .form-group{
     margin-right: 3%;
 }
@@ -52,6 +58,7 @@ body {
 	padding:1em;
 }
 .content1 h3 {
+	font-size: 22px;
 	margin:0;
 	color:#fff;
 }
@@ -76,6 +83,10 @@ body {
 .content2-header1 span {
 	font-size:14px;
 	font-weight:400;
+}
+
+.capitalize {
+	text-transform: capitalize;
 }
 .tracking {
 	width:100%;
@@ -419,7 +430,7 @@ span.line {
 	width:127.5%;
 }
 	.content1 h3 {
-	font-size:22px;
+	font-size:20px;
 }
 	.content1 h3 span {
 		display: block;
@@ -490,6 +501,9 @@ span.line {
 	.footer p {
 	font-size:16px;
 }
+	.panel-default > .panel-heading{
+		text-align: center!important;
+	}
 }
 
 @media (max-width: 384px){
@@ -540,6 +554,7 @@ span.line {
 	.tracking {
     margin-left: 17%;
 }
+
 }
 
 @media (max-width: 320px){

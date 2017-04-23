@@ -6,6 +6,7 @@
             requireBase: false
         });
     }]);
+
 	app.controller('mainCtrl',['$http','$location',function($http,$location){
         var ctrl=this;
 
