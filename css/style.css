@@ -647,6 +647,28 @@ span.line {
 	.content3 p {
     margin: -23% 0 12% -99%;
 }
+
+	.content4 {
+
+		margin-left: -36%;
+		width: 136.5%;
+		height: 600px;
+
+
+	}
+	div #map {
+		height: 400px;
+		width: 100%;
+		background-color: grey;
+
+	}
+	.content4 h1{
+		font-size: 14px;
+		align-content: center;
+	}
+
+
+
 	.tracking {
 	margin: 16% 0 0 19%;
 }
