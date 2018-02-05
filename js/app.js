@@ -166,7 +166,7 @@
 
             var reqForMap={
                 method: 'GET',
-                url: 'http://tracking.humeplaster.com.au:8080/HLS-REST/location/tracking?pickingSlip='+encodeURIComponent(ctrl.pickingSlip)+'&suburb='+encodeURIComponent(ctrl.suburb),
+                url: 'http://hls.humeplaster.com.au/api/location/tracking?pickingSlip='+encodeURIComponent(ctrl.pickingSlip)+'&suburb='+encodeURIComponent(ctrl.suburb),
                 headers: {
                     'Content-Type': 'application/json'
                 }
