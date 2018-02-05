@@ -13,7 +13,8 @@
             SUBTITLE:'Track a delivery',
             PICKINGSLIP:'Picking Slip',
             PICKINGSLIP_INVALID:'Invalid Picking Slip',
-            NOTE:'Please enter the picking slip number and suburb',
+            NOTE:'Welcome to the tracking delivery portal of Hume Building Products, Australia’s leading construction and building materials distributor.\n',
+            NOTE2: 'Enter your details below to track the progress of delivery of your building product order.',
             SUBURB:'Suburb',
             SUBURB_INVALID:'Invalid Suburb',
             SUBMIT:'Track',
@@ -22,6 +23,7 @@
             NORECORD:'No record found matching the Picking Slip and suburb. Please try again',
             NOREALTIME:'Sorry, no real-time tracking for this order.',
             CHECK_ANOTHER:'Check another delivery',
+            CALL_US:'For further inquiries or to continue searching for more products call us on 13 48 63 or visit',
             ORDER_NO:'Order Number',
             STATUS:'Status',
             EXPECTED_DATE:'Expected Date',
@@ -40,7 +42,8 @@
             SUBTITLE:'查询订单',
             PICKINGSLIP:'订单号',
             PICKINGSLIP_INVALID:'订单号无效',
-            NOTE:'请输入订单号及地区名查询',
+            NOTE:'欢迎来到Hume订单查询平台。我们是澳大利亚领先的建筑材料供应商。',
+            NOTE2: '请输入订单号及地区名查询',
             SUBURB:'地区',
             SUBURB_INVALID:'区名无效',
             SUBMIT:'查询',
@@ -48,6 +51,7 @@
             ERROR:'错误',
             NORECORD:'未找到符合订单号及区名的记录。请重试。',
             NOREALTIME:'抱歉，该订单没有实时位置',
+            CALL_US: '如需了解更多，请致电热线13 48 63或访问',
             CHECK_ANOTHER:'查询另一个订单',
             ORDER_NO:'订单号',
             STATUS:'状态',
@@ -116,10 +120,9 @@
 
             var req={
                 method: 'GET',
-                url: 'http://tracking.humeplaster.com.au:8080/HLS-REST/tracking?pickingSlip='+encodeURIComponent(ctrl.pickingSlip)+"&suburb="+encodeURIComponent(ctrl.suburb),
+                url: 'http://hls.humeplaster.com.au/api/tracking?pickingSlip='+encodeURIComponent(ctrl.pickingSlip)+"&suburb="+encodeURIComponent(ctrl.suburb),
                 headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization':'Basic YWRtaW46YWRtaW4='
+                    'Content-Type': 'application/json'
                 }
             };
 
@@ -165,8 +168,7 @@
                 method: 'GET',
                 url: 'http://tracking.humeplaster.com.au:8080/HLS-REST/location/tracking?pickingSlip='+encodeURIComponent(ctrl.pickingSlip)+'&suburb='+encodeURIComponent(ctrl.suburb),
                 headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization':'Basic YWRtaW46YWRtaW4='
+                    'Content-Type': 'application/json'
                 }
             };
 
