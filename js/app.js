@@ -269,6 +269,13 @@
                                 icon: homeIcon
                             });
 
+                            var bounds = new google.maps.LatLngBounds();
+                            bounds.extend(markerTruck.getPosition());
+                            bounds.extend(markerSuburb.getPosition());
+
+                            map.fitBounds(bounds);
+
+
                             // $scope.calculateDistance = function(orgin,destination){
 
 
